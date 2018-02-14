@@ -4,6 +4,8 @@
 
 pfSense Community Edition firewall version 2.2.6 and below is vulnerable to arbitrary code execution exploit as an authenticated non-administrative user. The initial advisory came from [Security Assessment](https://www.security-assessment.com/files/documents/advisory/pfsenseAdvisory.pdf) in April 2016, however until very recently there was not a public exploit for this vulnerability. This is my version of this exploit.
 
+You can read about the research and development process on my [blog post](https://spencerdodd.github.io/spencerdodd.github.io/2018/01/14/pfsense-arbitrary-code-execution/) about the exploit.
+
 ### php reverse shell payload
 
 ![nc_catch](img/nc.gif)
@@ -30,7 +32,7 @@ python3 pfsense_exec.py msf
 
 ### variables to set
 
-set these variables to their appropriate values for your exploitation
+set these variables (in the source code) to their appropriate values for your exploitation
 
 ```
 username = 	"admin" 			# default is admin
